@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('girlbeforeamirror.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .App {
   display: flex;
   justify-content: space-around;
@@ -12,6 +22,7 @@
   border-radius: 10px;
   padding: 20px;
   width: 40%;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
 }
 
 .inputBox {
@@ -51,7 +62,7 @@ li button:not(:last-child) {
 
 li span {
   flex: 1; 
-  margin-right: 150px; 
+  margin-right: 10px; 
 }
 
 ul {
@@ -63,7 +74,6 @@ li {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
-  padding: 5px 5px;
   align-items: center;
 }
 
