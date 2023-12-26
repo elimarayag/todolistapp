@@ -1,38 +1,74 @@
 .App {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputBox,
+.taskListBox {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+input {
+  width: 70%;
+  margin: 10px 0;
+}
+
+button {
+  background-color: purple;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+li button:not(:last-child) {
+  margin-right: 5px;
+}
+
+li span {
+  flex: 1; 
+  margin-right: 150px; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px;
+  align-items: center;
+}
+
+input,
+button {
+  box-sizing: border-box;
+}
+
